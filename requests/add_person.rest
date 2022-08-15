@@ -1,4 +1,5 @@
-POST http://localhost:3001/api/persons
+//POST http://localhost:3001/api/persons
+POST https://fs-phonebook-15082022.herokuapp.com/api/persons
 Content-Type: application/json
 
 {

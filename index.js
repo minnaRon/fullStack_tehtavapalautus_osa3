@@ -1,11 +1,17 @@
 const express = require('express')
-const cors = require('cors')
+
+//sallitaan kommunikointi, kun eri portit selain ja palvelin
+//const cors = require('cors')
+
 const morgan = require('morgan')
 
 const app = express()
 
 app.use(express.json())
-app.use(cors())
+
+//app.use(cors())
+
+app.use(express.static('build'))
 
 morgan.token('body', function (request, response) {
     return JSON.stringify(request.body)
