@@ -1,0 +1,2 @@
+GET http://localhost:3001/api/persons
+//GET https://fs-phonebook-15082022.herokuapp.com/api/persons
